@@ -19,7 +19,7 @@ return {
 							forwardSearchAfter = true,
 						},
 						forwardSearch = {
-							executable = "zathura",
+							executable = "okular",
 							args = { "--synctex-forward", "%l:1:%f", "%p" },
 						},
 						chktex = {

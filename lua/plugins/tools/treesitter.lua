@@ -45,7 +45,7 @@ return {
 			vim.g.vimtex_matchparen_enabled = 0
 
 			-- Configuracion básica
-			vim.g.vimtex_view_method = "zathura" --okular
+			vim.g.vimtex_view_method = "okular" --okular
 			vim.g.vimtex_compiler_method = "tectonic"
 			vim.g.vimtex_quickfix_mode = 0
 			vim.g.vimtex_syntax_conceal = {
