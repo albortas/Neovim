@@ -24,7 +24,7 @@ return {
 				highlight = {
 					enable = true,
 					disable = function(lang, buf)
-						return lang == { "tex", "bib" } -- Deshabilitar treesitter para LaTex
+						return lang == { "tex", "bib", "cls" } -- Deshabilitar treesitter para LaTex
 					end,
 					additional_vim_regex_highlighting = false,
 				},
@@ -39,7 +39,7 @@ return {
 	-- Syntax highlighting mejorado para LaTeX
 	{
 		"lervag/vimtex",
-		ft = { "tex", "bib" },
+		ft = { "tex", "bib", "cls" },
 		config = function()
 			-- Deshabilitar tree-sitter para VimTeX
 			vim.g.vimtex_matchparen_enabled = 0
@@ -62,6 +62,19 @@ return {
 				math_symbols = 0,
 				sections = 0,
 				styles = 0,
+			}
+			-- Configuracion mejorada para archivos de clase
+			vim.g.vimtex_syntax_custom_cmds = {
+				{
+					name = "Class",
+					pattern = "\\ProvidesClass{",
+					cmd = "texDocClass",
+				},
+				{
+					name = "Package",
+					pattern = "\\ProvidesPackage{",
+					cmd = "texDocPackage",
+				},
 			}
 
 			-- Mapeos específicos para VimTeX
