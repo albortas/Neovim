@@ -20,6 +20,7 @@ return {
 					},
 				},
 			})
+			-- Fuerza la carga de keymaps
 		end,
 	},
 }

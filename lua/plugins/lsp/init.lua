@@ -54,5 +54,5 @@ return {
 		end,
 	},
 
-	require("plugins.lsp.lang.tex"),
+	require("plugins.lsp.latex.tex"),
 }
