@@ -20,7 +20,6 @@ return {
 					"-file-line-error",
 					"-synctex=1", -- para sincronizacion inversa
 					"-shell-escape", -- si usas minted, tikz, etc.
-					"-outdir=build", -- ✅ Así SÍ se crea/usa la carpeta build
 				},
 			}
 
